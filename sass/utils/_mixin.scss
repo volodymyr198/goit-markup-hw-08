@@ -1,0 +1,11 @@
+@mixin title() {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+

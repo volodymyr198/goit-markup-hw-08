@@ -1,0 +1,33 @@
+.address {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}
+
+.address__list {
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    color: var(--transparent-color);
+    text-decoration: none;
+    line-height: 1.71;
+    transition: var(--transition-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__link--white {
+    color: var(--text-color);
+}

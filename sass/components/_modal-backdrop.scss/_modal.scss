@@ -1,0 +1,29 @@
+.modal {
+    position: absolute;
+    height: 581px;
+    width: 528px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    transition: var(--transition-transform);
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.2) rotate(0);
+    }
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.modal__button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

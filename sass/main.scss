@@ -1,0 +1,34 @@
+@import './utils/vars';
+@import './base/reset';
+@import './utils/visually-hidden';
+
+@import './utils/mixin';
+
+@import './components/container';
+@import './components/section';
+@import './components/sub-title';
+
+@import './components/logo';
+@import './components/btn';
+@import './components/contactsHeader';
+@import './components/soc-network';
+@import './components/addressFooter';
+@import './components/sabscribe-form';
+@import './components/_modal-backdrop.scss/close-btn';
+@import './components/_modal-backdrop.scss/backdrop';
+@import './components/_modal-backdrop.scss/modal-form';
+@import './components/_modal-backdrop.scss/modal';
+@import './components/_modal-backdrop.scss/checkbox';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio/filter-btn';
+@import './layout/portfolio/portfolio';
+@import './layout/portfolio/cards';
+
+
