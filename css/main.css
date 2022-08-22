@@ -92,14 +92,14 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -577,8 +577,22 @@ img {
   margin-bottom: 30px;
 }
 .checkbox-box__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 1.71;
   color: var(--secondary-color);
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-box__label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .checkbox-box__icon-box {
   width: 16px;
@@ -633,6 +647,9 @@ img {
   }
 }
 
+.menu-container {
+  position: relative;
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -644,7 +661,13 @@ img {
     height: 100vh;
   }
   .menu-container.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 48px 40px;
   }
@@ -683,6 +706,10 @@ img {
 
 .menu-btn.is-open .menu-btn__icon-menu {
   display: none;
+}
+
+.nav {
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 767px) {
@@ -921,6 +948,7 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 481px) {
   .team__item {

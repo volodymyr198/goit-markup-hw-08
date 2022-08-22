@@ -1,8 +1,16 @@
 .checkbox-box {
     margin-bottom: 30px;
     &__label {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         line-height: 1.71;
         color: var(--secondary-color);
+
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
     }
     &__icon-box {
         width: 16px;
