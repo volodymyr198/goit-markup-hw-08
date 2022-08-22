@@ -1,5 +1,6 @@
 .page-header {
     border-bottom: 1px solid var(--border-line-color);
+    
 }
 
 .page-header__container {
@@ -15,36 +16,48 @@
 }
 
 .menu-container {
-    display: none;
+    
 
     @media screen and (max-width: 767px) {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
         background-color: var(--bg-color);
-        width: 100vh;
+        width: 100%;
         height: 100vh;
-    }
-
-    &.is-open {
+        &.is-open {
         display: block;
         width: 100%;
         padding: 48px 40px;
     }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    
 }
 
 .menu-btn {
-    display: inline-flex;
     background-color: transparent;
     border: none;
     padding: 0;
     z-index: 1;
+    transition: fill var(--cubik);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
     & .menu-btn__icon-cross {
         display: none;
     }
     @media screen and (min-width: 768px) {
         display: none;
     }
+    
 }
 
 .menu-btn.is-open .menu-btn__icon-cross {
@@ -55,9 +68,13 @@
     display: none;
 }
 
+
+
 .nav__item {
     @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
+        &:not(:last-child) {
+    margin-bottom: 32px;
+}
     }
 
     @media screen and (min-width: 1200px) {
@@ -111,13 +128,21 @@
 
 .social-small {
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .social-small__item {
-    padding: 0 10px;
-
+    
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
     &:not(:last-child) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;        
     }
 }
 
