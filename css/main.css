@@ -46,6 +46,7 @@ body {
   font-weight: normal;
   letter-spacing: 0.03em;
   margin: 0;
+  overflow: hidden;
 }
 
 p,
@@ -132,11 +133,6 @@ img {
   font-weight: 700;
   line-height: 1.17;
 }
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -151,6 +147,13 @@ img {
   .logo__footer {
     margin-bottom: 20px;
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo__footer {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -389,6 +392,11 @@ img {
 @media screen and (max-width: 767px) {
   .subscribe-form__input {
     display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
     margin-bottom: 20px;
   }
 }
@@ -655,7 +663,6 @@ img {
 }
 
 .page-header__container {
-  padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,6 +675,11 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    gap: 88px;
   }
 }
 
@@ -701,9 +713,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 84px;
   }
 }
 
@@ -934,6 +944,11 @@ img {
 .features__sub-title {
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .features__sub-title {
+    text-align: center;
+  }
+}
 
 .features__description {
   color: var(--secondary-color);
@@ -1160,14 +1175,37 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer__box {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__address-box {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer__address-box {
     margin-right: 70px;

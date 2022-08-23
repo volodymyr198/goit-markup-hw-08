@@ -7,12 +7,26 @@
 }
 
 .page-footer__box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+    }
+
     @media screen and (min-width: 1200px) {
         align-items: baseline;
+        text-align: left;
     }
 }
 
 .page-footer__address-box {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
     }

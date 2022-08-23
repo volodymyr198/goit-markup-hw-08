@@ -3,7 +3,7 @@
 }
 
 .page-header__container {
-    padding: 10px 15px;
+    // padding: 10px 15px;
     display: flex;
     align-items: center;
 
@@ -11,6 +11,9 @@
         justify-content: space-between;
     }
     
+    @media screen and (min-width: 768px) {
+        gap: 88px;
+    }
 
 }
 
@@ -36,7 +39,7 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: space-between;
+        gap: 84px;
     }
 }
 
