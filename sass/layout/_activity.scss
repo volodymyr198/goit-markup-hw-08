@@ -19,11 +19,11 @@
 
 .activity__sub-title {
     position: absolute;
+    bottom: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
     width: 100%;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);

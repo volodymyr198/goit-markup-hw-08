@@ -8,9 +8,12 @@
 @import './components/section';
 @import './components/sub-title';
 
+@import './layout/header';
 @import './components/logo';
 @import './components/btn';
 @import './components/contactsHeader';
+@import './layout/hero';
+
 @import './components/soc-network';
 @import './components/addressFooter';
 @import './components/sabscribe-form';
@@ -20,8 +23,8 @@
 @import './components/_modal-backdrop.scss/modal';
 @import './components/_modal-backdrop.scss/checkbox';
 
-@import './layout/header';
-@import './layout/hero';
+
+
 @import './layout/features';
 @import './layout/activity';
 @import './layout/team';

@@ -16,8 +16,12 @@ body {
     font-weight: normal;
     letter-spacing: 0.03em;
     margin: 0;
-    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+    }
 }
+
 p,
 h1,
 h2,

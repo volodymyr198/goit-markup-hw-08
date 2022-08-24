@@ -1,20 +1,33 @@
-.cards {
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+.cards {    
+    margin-bottom: -30px;
+    // margin-left: -30px;
+    // margin-top: -30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .card {
     position: relative;
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-    width: 370px;
-    height: 404px;
+    // margin-left: 30px;
+    // margin-top: 30px;
+    max-width: 450px;
+
+@media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+}
+
+    @media screen and (min-width: 768px) {
+        max-width: calc((100% - 30px) / 2);
+    }
 }
 
 .card__overlay {
     position: absolute;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -25,6 +38,7 @@
     color: var(--text-color);
     transform: translateY(100%);
     transition: var(--transition-transform);
+
     .card__link:hover &,
     .card__link:focus & {
         transform: translateY(0);
@@ -32,10 +46,13 @@
 }
 
 .card__link {
-    display: block;
+    display: flex;
+	flex-direction: column;
+    height: 100%;
     text-decoration: none;
     color: inherit;
     transition: var(--transition-box-shadow);
+
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -52,6 +69,8 @@
     border: 1px solid var(--portfolio-border-color);
     border-top: none;
     padding: 20px 24px;
+
+    flex-grow: 1;
 }
 
 .card__title {
@@ -61,6 +80,7 @@
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
+
 .card__description {
     font-size: 16px;
     line-height: 1.88;
