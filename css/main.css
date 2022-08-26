@@ -67,7 +67,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -583,7 +583,6 @@ img {
 }
 
 .soc-networks__link {
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,10 +717,10 @@ img {
 }
 
 .backdrop {
-  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1276,6 +1275,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1309,15 +1314,17 @@ img {
   }
 }
 
-.porfolio-box {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.card {
+  position: relative;
 }
 
-.cards {
-  margin-bottom: -30px;
+@media screen and (max-width: 767px) {
+  .cards {
+    margin-bottom: -30px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .cards {
@@ -1328,23 +1335,10 @@ img {
         flex-wrap: wrap;
     gap: 30px;
   }
-}
-
-.card {
-  position: relative;
-  max-width: 450px;
-}
-@media screen and (max-width: 767px) {
-  .card {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
   .card {
     max-width: calc((100% - 30px) / 2);
   }
 }
-
 .card__overlay {
   position: absolute;
   min-height: 100%;

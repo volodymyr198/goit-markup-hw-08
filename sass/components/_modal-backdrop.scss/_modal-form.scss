@@ -1,5 +1,4 @@
-.modal-form {
-}
+
 
 .modal-box {
     margin-bottom: 10px;
@@ -26,6 +25,7 @@
     padding: 14px 42px;
     outline: none;
     transition: border-color var(--cubik);
+
     &:focus {
         border-color: var(--accent-color);
     }
@@ -37,6 +37,7 @@
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--cubik);
+
     .modal-box__input:focus + & {
         fill: var(--accent-color);
     }
@@ -56,9 +57,11 @@
     outline: none;
     transition: border-color var(--cubik);
     display: block;
+
     &:focus {
         border-color: var(--accent-color);
     }
+
     &::placeholder {
         line-height: 1.14;
         letter-spacing: 0.01em;

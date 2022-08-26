@@ -21,6 +21,7 @@
     color: var(--transparent-color);
     line-height: 1.71;
     transition: var(--transition-color);
+    
     &:hover,
     &:focus {
         color: var(--accent-color);
