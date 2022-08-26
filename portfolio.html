@@ -14,14 +14,14 @@
             rel="stylesheet"
             href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         />
-        <link rel="stylesheet" href="./css/main.min.css">
+        <link rel="stylesheet" href="./css/main.min.css" />
         <title>Портфолио</title>
     </head>
     <body>
         <!--                Шапка страницы               -->
         <header class="page-header">
             <div class="page-header__container container">
-                <a class="logo logo__page-header" href="./index.html"
+                <a class="logo logo__page-header link" href="./index.html"
                     ><span class="logo__web">Web</span>Studio</a
                 >
                 <button class="menu-btn" type="button" data-menu-button aria-expanded="false">
@@ -40,21 +40,21 @@
                     <nav class="nav">
                         <ul class="nav__list list">
                             <li class="nav__item">
-                                <a class="nav__link" href="./index.html"
-                                    >Студия</a
+                                <a class="nav__link link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link--current link" href="./portfolio.html"
+                                    >Портфолио</a
                                 >
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="">Контакты</a>
+                                <a class="nav__link link" href="">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                     <ul class="contacts-list list">
                         <li class="contacts-list__item">
-                            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                            <a class="contacts-list__link link" href="mailto:info@devstudio.com">
                                 <svg class="contacts-list__icon" width="16" height="12">
                                     <use href="./images/icons.svg#icon-envelope"></use>
                                 </svg>
@@ -62,7 +62,10 @@
                             >
                         </li>
                         <li class="contacts-list__item">
-                            <a class="contacts-list__link contacts-list__link--accent" href="tel:+380961111111">
+                            <a
+                                class="contacts-list__link contacts-list__link--accent link"
+                                href="tel:+380961111111"
+                            >
                                 <svg class="contacts-list__icon" width="10" height="16">
                                     <use href="./images/icons.svg#icon-smartphone"></use>
                                 </svg>
@@ -72,16 +75,16 @@
                     </ul>
                     <ul class="social-small list">
                         <li class="social-small__item">
-                            <a href="" class="social-small__link">Instagram</a>
+                            <a href="" class="social-small__link link">Instagram</a>
                         </li>
                         <li class="social-small__item">
-                            <a href="" class="social-small__link">Twitter</a>
+                            <a href="" class="social-small__link link">Twitter</a>
                         </li>
                         <li class="social-small__item">
-                            <a href="" class="social-small__link">Facebook</a>
+                            <a href="" class="social-small__link link">Facebook</a>
                         </li>
                         <li class="social-small__item">
-                            <a href="" class="social-small__link">Linkedin</a>
+                            <a href="" class="social-small__link link">Linkedin</a>
                         </li>
                     </ul>
                 </div>
@@ -111,13 +114,35 @@
                     </ul>
                     <ul class="cards list">
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio1.jpg"
-                                        alt="Фото трёх сотрудников"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio1-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio1-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio1-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio1-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio1-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio1-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio1-desktop.jpg"
+                                            alt="Фото трёх сотрудников"
+                                        />
+                                    </picture>
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -131,13 +156,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio2.jpg"
-                                        alt="Два баскетболиста"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio2-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio2-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio2-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio2-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio2-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio2-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio2-desktop.jpg"
+                                            alt="Два баскетболиста"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -145,21 +193,42 @@
                                     </p>
                                 </div>
                                 <div class="card__box">
-                                    <h3 class="card__title">
-                                        Постер New Orlean vs Golden Star
-                                    </h3>
+                                    <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
                                     <p class="card__description">Дизайн</p>
                                 </div>
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio3.jpg"
-                                        alt="Логотип ресторана морская еда"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio3-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio3-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio3-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio3-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio3-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio3-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio3-desktop.jpg"
+                                            alt="Логотип ресторана морская еда"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -173,9 +242,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img src="./images/portfolio4.jpg" alt="Наушники" />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio4-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio4-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio4-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio4-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio4-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio4-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio4-desktop.jpg"
+                                            alt="Наушники"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -189,13 +285,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio5.jpg"
-                                        alt="Две коробки"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio5-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio5-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio5-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio5-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio5-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio5-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio5-desktop.jpg"
+                                            alt="Две коробки"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -209,13 +328,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio6.jpg"
-                                        alt="Монитор мака"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio6-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio6-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio6-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio6-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio6-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio6-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio6-desktop.jpg"
+                                            alt="Монитор мака"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -229,9 +371,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img src="./images/portfolio7.jpg" alt="Журнал" />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio7-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio7-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio7-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio7-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio7-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio7-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio7-desktop.jpg"
+                                            alt="Журнал"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -245,13 +414,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img
-                                        src="./images/portfolio8.jpg"
-                                        alt="Дизайн бирки"
-                                    
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio8-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio8-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio8-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio8-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio8-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio8-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio8-desktop.jpg"
+                                            alt="Дизайн бирки"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -265,9 +457,36 @@
                             </a>
                         </li>
                         <li class="card">
-                            <a class="card__link" href="">
+                            <a class="card__link link" href="">
                                 <div class="card__thumb">
-                                    <img src="./images/portfolio9.jpg" alt="Руки на клавиатуре ноутбука"/>
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio9-desktop.jpg    1x,
+                                                ./images/portfolio/portfolio9-desktop@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio9-tablet.jpg    1x,
+                                                ./images/portfolio/portfolio9-tablet@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio9-mobile.jpg    1x,
+                                                ./images/portfolio/portfolio9-mobile@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio/portfolio9-desktop.jpg"
+                                            alt="Руки на клавиатуре ноутбука"
+                                        />
+                                    </picture>
+
                                     <p class="card__overlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить
@@ -288,26 +507,26 @@
         <footer class="page-footer section">
             <div class="page-footer__box container holder">
                 <div class="page-footer__address-box">
-                    <a class="logo logo__footer" href="./index.html"
+                    <a class="logo logo__footer link" href="./index.html"
                         ><span class="logo__web">Web</span>Studio</a
                     >
                     <address class="address">
                         <ul class="address__list list">
                             <li class="address__item">
                                 <a
-                                    class="address__link address__link--white"
+                                    class="address__link address__link--white link"
                                     href="https://goo.gl/maps/n5isGS4fZseWLgrKA"
                                     target="_blank"
                                     >г. Киев, пр-т Леси Украинки, 26</a
                                 >
                             </li>
                             <li class="address__item">
-                                <a class="address__link" href="mailto:info@example.com"
+                                <a class="address__link link" href="mailto:info@example.com"
                                     >info@example.com</a
                                 >
                             </li>
                             <li class="address__item">
-                                <a class="address__link" href="tel:+380991111111"
+                                <a class="address__link link" href="tel:+380991111111"
                                     >+38 099 111 11 11</a
                                 >
                             </li>
@@ -319,28 +538,44 @@
                     <ul class="soc-networks list">
                         <li class="soc-networks__item">
                             <a class="soc-networks__link soc-networks__link--footer-dark" href="">
-                                <svg class="soc-networks__icon soc-networks__icon--white" width="20" height="20">
+                                <svg
+                                    class="soc-networks__icon soc-networks__icon--white"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="soc-networks__item">
                             <a class="soc-networks__link soc-networks__link--footer-dark" href="">
-                                <svg class="soc-networks__icon soc-networks__icon--white" width="20" height="20">
+                                <svg
+                                    class="soc-networks__icon soc-networks__icon--white"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="soc-networks__item">
                             <a class="soc-networks__link soc-networks__link--footer-dark" href="">
-                                <svg class="soc-networks__icon soc-networks__icon--white" width="20" height="20">
+                                <svg
+                                    class="soc-networks__icon soc-networks__icon--white"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="soc-networks__item">
                             <a class="soc-networks__link soc-networks__link--footer-dark" href="">
-                                <svg class="soc-networks__icon soc-networks__icon--white" width="20" height="20">
+                                <svg
+                                    class="soc-networks__icon soc-networks__icon--white"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -348,9 +583,17 @@
                     </ul>
                 </div>
                 <div class="page-footer__subscribe-box">
-                    <h3 class="subscribe-box__sub-title sub-title sub-title--white">Подпишитесь на рассылку</h3>
+                    <h3 class="subscribe-box__sub-title sub-title sub-title--white">
+                        Подпишитесь на рассылку
+                    </h3>
                     <form class="subscribe-form holder">
-                        <input class="subscribe-form__input" type="email" name="mail" id="mail" placeholder="E-mail" />
+                        <input
+                            class="subscribe-form__input"
+                            type="email"
+                            name="mail"
+                            id="mail"
+                            placeholder="E-mail"
+                        />
                         <button class="button holder" type="submit">
                             Подписаться
                             <svg class="subscribe-form__icon" width="24" height="24">
@@ -436,7 +679,7 @@
                 </form>
             </div>
         </div>
-        
+
         <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
